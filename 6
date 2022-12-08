@@ -1,1 +1,8 @@
-
+from collections import Counter
+a = [input().lower() for _ in range(int(input()))]
+c = ''
+for i in range(len(a)):
+    c += a[i]
+    c += ' '
+b = Counter(c.split())
+print(max(b.keys()))
